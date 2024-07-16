@@ -1,0 +1,41 @@
+ General container styles
+  
+.row {
+    margin-top: 1rem;
+  }
+  
+  .card {
+    overflow: hidden;
+    margin: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(15px);
+  }
+  
+  .card-img-top {
+    
+   height: auto;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+
+  
+
+

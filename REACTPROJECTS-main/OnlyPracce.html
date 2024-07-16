@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-weight: 600;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    padding: 0.5rem;
+}
+.sidebar{
+    background-color: black;
+    width: 420px;
+    border-radius: 0.5rem;
+}
+.main_content{
+    background-color: #121212;
+    width: 100%;
+    flex: 1;
+    border-radius: 1rem;   
+    overflow: auto;
+    margin-left: 0.45rem;
+}
+.music_player{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 6.2rem;
+    padding: 0.5rem 0.4rem;
+    align-items: baseline;
+    align-content: space-evenly;
+}
+.nav_option{
+    background-color: #121212;
+    line-height: 3rem;
+    opacity: 0.7;
+    padding-left: 1rem;
+}
+.nav_option i{
+    font-size: 1.3rem;
+}
+.nav_option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.nav_option:hover{
+    opacity: 1;
+}
+.library{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 100%;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.5rem;
+}
+.options{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib_option img{
+    background-color: #121212;
+   height: 1.3rem;
+   width: 1.3rem;
+}
+.lib_option , .lib_option a{
+    background-color: #121212;
+    font-size: 1rem;
+}
+.icons{
+    font-size: 1.2rem;
+    display: flex;
+    background-color: #121212;
+}
+.icons i{
+    background-color: #121212;
+    opacity:0.7;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box1{
+    height: 7rem;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+}
+.box-p1{
+    background-color: #232323;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.box-p2{
+    background-color: #232323;
+    font-weight: 450;
+    font-size: 0.85rem;
+}
+.badge{
+    background-color: white;
+    color: black;
+    padding: 0.25rem 1rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    border: none;
+    height: 2rem;
+    width: fit-content;
+    position: relative;
+    top:1.5rem
+}
+.box2{
+    height: 7rem;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav_option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib_option nav_option">
+                        <img src="./assets/library_icon.png" alt="Library Icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box1">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                    <div class="box2">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">main content</div>
+        <div class="music_player">music player</div>
+    </div>
+</body>
+</html>
