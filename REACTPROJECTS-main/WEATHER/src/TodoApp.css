@@ -1,0 +1,98 @@
+/* CSS for the TodoApp component */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .main-div {
+    background: #fff;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  
+  .child-div {
+    text-align: center;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  figure img {
+    width: 100px;
+  }
+  
+  figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .AddItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .AddItems input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-right: 40px;   
+  }
+  .AddItems input:focus{
+    color: orange;
+    outline: red;
+  }
+  .AddItems i {
+    position:absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #28a745;
+    cursor: pointer;
+  }
+  .AddItems i:hover{
+    color: orange;
+  }
+  .showItems {
+    margin-top: 20px;
+  }
+  
+  .eachItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .eachItem h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #9e2a2b;
+  }
+  
+  .eachItem i {
+    font-size: 20px;
+    color: #dc3545;
+    cursor: pointer;
+  }
+  
