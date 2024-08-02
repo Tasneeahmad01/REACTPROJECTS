@@ -1,0 +1,68 @@
+
+
+.Items img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}   
+
+.Image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8fafd;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .Items {
+    text-align: center;
+  }
+  .testimonial-content {
+    margin: 20px 0;
+  }
+  
+  .testimonial-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .Itema h2{
+    margin-bottom: 50px;
+  }
+  .testimonial-text h1 {
+    margin: 0 30px;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  
+  .testimonial-text i {
+    font-size: 2rem;
+    color: #4caf50; 
+  }
+  
+  .testimonial-text .fa-circle-left {
+    margin-right: 20px; 
+    cursor: pointer;
+  }
+  
+  .testimonial-text .fa-circle-right {
+    margin-left: 20px;  
+    cursor: pointer;
+  }
+  
+  .Items p {
+    margin: 5px 0;
+  }
+.p1{
+    font-size: 1.2rem;
+    font-weight: 600;
+}  
+.p2{
+    font-weight: 300;
+
+}

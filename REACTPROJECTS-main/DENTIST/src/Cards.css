@@ -1,0 +1,87 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.heading-card1 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgreen;
+    font-weight: 600;
+}
+
+.heading-card2 {
+    font-size: 2.5rem;
+    margin-bottom: 5px; 
+}
+
+.Cards {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid yellow;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #fde79c;
+    width: 320px;
+    margin: 10px;
+    text-align: left; 
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.content h3 {
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.Container img {
+    width: 130px; 
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50% 0 20px 50px;
+}
+
+.Container .content {
+    flex: 1;
+}
+
+.content p {
+    margin-bottom: 10px;
+}
+
+.learn-more-btn {
+    background: #ffff;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px 0px 20px 0;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    margin-top: 10px; 
+    cursor: pointer;
+}
+.learn-more-btn:hover{
+    color: #fff;
+    background-color: #a3b18a;
+} 

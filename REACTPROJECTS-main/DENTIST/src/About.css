@@ -1,0 +1,153 @@
+.Main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.child-div {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.child-div img {
+  width: 100%;  
+  height: 100%;
+  border-radius: 0 100px 0 100px;
+  margin-right: 20px;
+  object-fit: cover;
+  transition: border-radius 0.3s ease;  
+}
+
+.text-content {
+  max-width: 600px;
+  margin-left: 30px;
+}
+
+.About {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-weight: 550;
+}
+
+.text-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.Btn {
+  background: lightgreen;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: none;
+}
+
+.Btn:hover {
+  background-color: #fff;
+  border: 1px solid lightgreen;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .child-div {
+    flex-direction: column;  
+    align-items: center;  
+  }
+  
+  .child-div img {
+    width: 300px; 
+    height: 250px; 
+    border-radius: 20%;
+    margin-right: 0; 
+    margin-bottom: 20px; 
+    justify-content: center;
+  }
+  
+  .text-content {
+    margin-left: 0; 
+    text-align: center; 
+    width: 100%;
+  }
+  
+  .text-content h2 {
+    font-size: 1.5rem;  
+  }
+  
+  .text-content h3 {
+    font-size: 1.2rem;  
+  }
+  
+  .Btn {
+    font-size: 0.9rem;  
+    padding: 15px 25px; 
+  }
+}
+
+
+
+@media (max-width: 560px) {
+  .child-div {
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .child-div img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    margin-right: 0; 
+    margin-bottom: 20px; 
+    justify-content: center;
+  }
+  
+  .text-content {
+    margin-left: 0; 
+    text-align: center; 
+    width: 100%;
+  }
+  
+  .text-content h2 {
+    font-size: 1.5rem;  
+  }
+  
+  .text-content h3 {
+    font-size: 1.2rem;  
+  }
+  
+  .Btn {
+    font-size: 0.9rem;
+    padding: 15px 25px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .Main-div {
+    padding: 10px; 
+  }
+  
+  .Btn {
+    width: 100%; /* Full width button */
+    padding: 15px; /* Adjust padding */
+    text-align: center;
+  }
+}
